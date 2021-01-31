@@ -3,10 +3,10 @@ import idx2numpy as idx
 import matplotlib.pyplot as plt
 
 np.random.seed(0)
-img = r"C:\Users\Aaditya\OneDrive\Documents\ML\train-image"
-lbl = r'C:\Users\Aaditya\OneDrive\Documents\ML\train-labels-idx1-ubyte'
-t_lbl = r'C:\Users\Aaditya\OneDrive\Documents\ML\t10k-labels.idx1-ubyte'
-t_img = r'C:\Users\Aaditya\OneDrive\Documents\ML\t10k-images.idx3-ubyte'
+img = r".\train-image.idx3-ubyte"
+lbl = r'.\train-labels-idx1-ubyte'
+t_lbl = r'.\t10k-labels.idx1-ubyte'
+t_img = r'.\t10k-images.idx3-ubyte'
 image = idx.convert_from_file(img)
 iput = np.reshape(image, (60000,784))/255
 otput = np.eye(10)[idx.convert_from_file(lbl)]
