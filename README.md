@@ -3,4 +3,4 @@ This is a neural network implementation using numpy to understand how the data i
 
 It uses the MNIST dataset for training.
 
-The code is written in functions so that it is readable and esaily understandable.
+The code is written in functions so that it is readable and easily understandable.
